@@ -5,7 +5,7 @@ export interface User {
     password: string;
 }
 
-export const login = async (user: User): Promise<User> => {
-    const response = await api.post<User>("/auth/login", user);
+export const login = async (User: User): Promise<User> => {
+    const response = await api.post<User>("/auth/login", User);
     return response.data;
 }
