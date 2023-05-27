@@ -24,7 +24,7 @@ export const getInformacoes = async (): Promise<Informacoes> => {
 }
 
 export const deleteInformacoes = async (id: number | undefined): Promise<Informacoes> => {
-    const response = await api.delete<Informacoes>(`/informacoes/${id}`); // Ver se id está correto
+    const response = await api.delete<Informacoes>(`/informacoes/${id}`);
     return response.data;
 }
 
